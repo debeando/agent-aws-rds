@@ -116,6 +116,10 @@ func main() {
 					Name:  *r.Label,
 					Value: r.Values[0],
 				})
+
+				log.DebugWithFields("AWS RDS Metric", log.Fields{
+					*r.Label: r.Values[0],
+				})
 			}
 		}
 
