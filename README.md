@@ -14,7 +14,7 @@ To run container:
 docker run \
 	--name debeando-agent-aws-rds \
 	--env DEBUG=true \
-	--env INTERVAL=10 \
+	--env INTERVAL=60 \
 	--env INFLUXDB_HOST="http://com-env-influxdb-observability-node01.aws.com" \
 	--env INFLUXDB_TOKEN="abc123cde456==" \
 	--env AWS_RDS_INSTANCE_IDENTIFIER="db1" \
